@@ -26,3 +26,17 @@
 
   number : 2^53  
   bigint : very big
+
+- **String**
+
+  **_string_** is the set of all strings and the things you can do with them like concatenate (+), slice (.slice), and so on.
+
+- **Symbol**
+
+  Symbols don’t come up often in practice; they are used as an alternative to string keys in objects and maps
+
+  - Unique symbol:  
+    const a = Symbol('a')  
+    const b: unique symbol = Symbol('b')
+
+- **Objects**
