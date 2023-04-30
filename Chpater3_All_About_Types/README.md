@@ -57,4 +57,9 @@
 
 - **_Arrays_**
 
-  Like in JavaScript, TypeScript arrays are special kinds of objects that support things like concatenation, pushing, searching, and slicing
+  Like in JavaScript, TypeScript arrays are special kinds of objects that support things like concatenation, pushing, searching, and slicing.  
+  Like with objects, creating arrays with const won’t hint to TypeScript to infer their types more narrowly.
+
+- **_Tuples_**
+
+  Tuples are subtypes of array. They’re a special way to type arrays that have fixed lengths, where the values at each index have specific, known types.
