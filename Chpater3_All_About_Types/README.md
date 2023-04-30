@@ -22,16 +22,16 @@
   integers, floats, positives, negatives, Infinity, NaN, and so on  
   note: (let oneMillion = 1_000_000 // Equivalent)
 
-- **Bigint**
+- **_Bigint_**
 
   number : 2^53  
   bigint : very big
 
-- **String**
+- **_String_**
 
   **_string_** is the set of all strings and the things you can do with them like concatenate (+), slice (.slice), and so on.
 
-- **Symbol**
+- **_Symbol_**
 
   Symbols don’t come up often in practice; they are used as an alternative to string keys in objects and maps
 
@@ -39,4 +39,22 @@
     const a = Symbol('a')  
     const b: unique symbol = Symbol('b')
 
-- **Objects**
+- **_Objects_**
+
+  By default, TypeScript is pretty strict about object properties
+
+  | Value           | {}  | object | Object |
+  | --------------- | --- | ------ | ------ |
+  | {}              | Yes | Yes    | Yes    |
+  | ['a']           | Yes | Yes    | Yes    |
+  | function() {}   | Yes | Yes    | Yes    |
+  | new String('a') | Yes | Yes    | Yes    |
+  | 'a'             | Yes | No     | Yes    |
+  | 1               | Yes | No     | Yes    |
+  | Symbol('a')     | Yes | No     | Yes    |
+  | null            | No  | No     | No     |
+  | undefined       | No  | No     | No     |
+
+- **_Arrays_**
+
+  Like in JavaScript, TypeScript arrays are special kinds of objects that support things like concatenation, pushing, searching, and slicing
