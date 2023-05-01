@@ -63,3 +63,27 @@
 - **_Tuples_**
 
   Tuples are subtypes of array. They’re a special way to type arrays that have fixed lengths, where the values at each index have specific, known types.
+
+- **_Null, Undefined, Void, Never_**
+
+  JavaScript has two values to represent an absence of something: null and undefined.  
+  undefined: means that something hasn’t been defined yet.  
+  null: means an absence of a value.
+
+- **_Enums_**
+
+  Enums are a way to enumerate the possible values for a type. They are unordered data structures that map keys to values.  
+  We can use const enum to prevent reverse lookup, but sometimes can lead to safety issues when you import a const enum from someone else's TS code.
+
+- **_Summary_**
+
+  | Type    | Subtype         |
+  | ------- | --------------- |
+  | boolean | Boolean literal |
+  | bigint  | BigInt literal  |
+  | number  | Number literal  |
+  | string  | String literal  |
+  | symbol  | unique symbol   |
+  | object  | Object literal  |
+  | Array   | Tuple           |
+  | enum    | const enum      |
