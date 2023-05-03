@@ -20,6 +20,14 @@
   1. A function can have at most one rest parameter.
   2. That parameter has to be the last one in the function’s parameter list.
 
+- Call, apply, and bind
+
+  - Methods to let you control function call in different ways
+
+- Typing This
+
+  - For this reason, a lot of teams ban this everywhere except in class methods—to do this for your codebase too, enable the no-invalid-this TSLint rule.
+
 2.  Signature overloading.
 3.  Polymorphic functions.
 4.  Polymorphic type aliases.
