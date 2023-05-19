@@ -12,8 +12,6 @@ defaultParameters('Jason', '1')
 defaultParameters('Kevin')
  */
 
-import {get} from 'http'
-
 type Context = {
   appId?: string
   userId?: string
