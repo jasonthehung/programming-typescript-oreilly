@@ -30,13 +30,18 @@ let filter: Filter = (array, fn) => {
   return result
 }
 
-// (a) T is bound to number
-filter([1, 2, 3], (_) => _ < 3)
+// ----------------------------------------------------------------
 
-// (b) T is bound to string
-filter(['a', 'b', 'c'], (_) => _ !== 'b')
+type Filter_v2<T> = {
+  (array: T[], fn: (item: T) => boolean): T[]
+}
 
-// (c) T is bound to {firstName: string}
-filter([{firstName: 'Jason'}, {firstName: 'John'}, {firstName: 'Wen'}], (_) =>
-  _.firstName.startsWith('J')
-)
+let filter_v2: Filter_v2<number> = (array, fn) => {
+  let result = []
+  for (let i = 0; i < array.length; i++) {
+    if (fn(array[i])) {
+      result.push(array[i])
+    }
+  }
+  return result
+}
