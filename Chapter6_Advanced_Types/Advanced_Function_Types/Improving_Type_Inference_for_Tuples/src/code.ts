@@ -4,6 +4,6 @@ function tuple<T extends unknown[]>(...ts: T): T {
 
 let a = tuple(1, 'hello', true)
 
-console.log(typeof a)
+console.log(a)
 
 export = {}
